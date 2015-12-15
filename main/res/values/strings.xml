@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SnakeOil</string>
+    <string name="button_error">Oops!</string>
+    <string name="score_holder">Score</string>
+    <string name="action_settings">Settings</string>
+    <string name="play_message">PLAY!</string>
+    <string name="role_message">Draw role</string>
+    <string name="role">Press button to draw</string>
+    <string name="point_scored">Did you win?</string>
+    <string name="reset_message">Reset</string>
+    <string name="title_activity_display_cards">DisplayCards</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="word1">word1</string>
+    <string name="word2">word2</string>
+    <string name="swap">Swap?</string>
+    <string name="exit">Exit</string>
+
+
+
+</resources>

@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:orientation="vertical">
+        <!-- Score button & counter here-->
+
+    <TextView
+        android:id="@+id/score_counter"
+        android:text="@string/score_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="2mm"/>
+
+    <Button
+        android:onClick="addScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/score_counter"
+        android:text="@string/point_scored"/>
+
+        <!-- Role button and role here-->
+    <Button
+        android:id="@+id/draw_button"
+        android:text="@string/role_message"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:onClick="drawRole"/>
+
+    <TextView
+        android:id="@+id/role_holder"
+        android:text="@string/role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/draw_button"
+        android:textSize="3mm"/>
+
+        <!-- Descriptor Card Buttons here-->
+    <Button
+        android:id="@+id/button1"
+        android:onClick="selectButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/button_error"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:onClick="selectButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/button_error"
+        android:layout_above="@id/button1"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:onClick="selectButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/button_error"
+        android:layout_above="@id/button2"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:onClick="selectButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/button_error"
+        android:layout_above="@id/button3"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:onClick="selectButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/button_error"
+        android:layout_above="@id/button4"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:onClick="selectButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/button_error"
+        android:layout_above="@id/button5"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/playButton"
+        android:onClick="submitCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/play_message"
+        android:layout_above="@id/button6"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:onClick="resetSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/reset_message"
+        android:layout_toRightOf="@id/playButton"
+        android:layout_above="@id/button6"/>
+
+</RelativeLayout>
